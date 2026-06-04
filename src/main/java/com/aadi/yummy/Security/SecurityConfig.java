@@ -49,12 +49,24 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService() {
         return new InMemoryUserDetailsManager(
                 User.builder()
-                        .username("user")
+                        .username("user")                                                   
                         .password("{noop}user")
                         .roles("USER")
                         .build()
         );
     }
+
+    //   public UserDetailsService userDetailsService(UserRepo userRepo) {
+    //     return email -> {
+    //         com.aadi.yummy.entities.User user = userRepo.findByEmail(email)
+    //                 .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+    //         return User.builder()
+    //                 .username(user.getEmail())
+    //                 .password("{noop}" + user.getPassword())
+    //                 .roles(user.getRole() != null ? user.getRole().name() : "CUSTOMER")
+    //                 .build();
+    //     };
+    // }
 
 
 

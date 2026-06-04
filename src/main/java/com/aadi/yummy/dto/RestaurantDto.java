@@ -15,7 +15,7 @@ public class RestaurantDto {
     private String name;
     private String description;
     private String banner;
-    private String address;
+    private String address; 
     private LocalTime openTime;
     private LocalTime closeTime;
     private Boolean open;
