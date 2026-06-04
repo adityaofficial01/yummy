@@ -56,6 +56,10 @@ public class SecurityConfig {
         );
     }
 
+
+
+    
+
     //   public UserDetailsService userDetailsService(UserRepo userRepo) {
     //     return email -> {
     //         com.aadi.yummy.entities.User user = userRepo.findByEmail(email)
